@@ -109,7 +109,7 @@ main {
   line-height: 1;
   flex-direction: column;
   text-align: center;
-  justify-content: center; /* Debug border */ /* border: 2px solid green; */
+  justify-content: center;
 }
 .project-details a {
   color: #ff8c00;
@@ -168,8 +168,8 @@ main {
 .resume-link {
   border: 1px solid #ccc;
   background-color: var(--cg-bggrey);
-  color: #ff8c00;
   border-radius: 3px;
+  color: #ff8c00;
   padding: 0px 2px 2px 2px;
 }
 
@@ -190,6 +190,15 @@ textarea {
   border-radius: 4px;
   font-size: 16px;
   resize: none;
+}
+
+/* BLOG CSS */
+.blog-text {
+  border: 1px solid #ccc;
+  background-color: var(--cg-bggrey);
+  border-radius: 3px;
+  padding: 0px 2px 2px 2px;
+
 }
 
 /* FOOTER CSS */
