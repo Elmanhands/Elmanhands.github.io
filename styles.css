@@ -1,23 +1,23 @@
 :root {
   /* variables */
-  --cg-black: rgb(30, 32, 32);
+  --cg-text: rgb(255, 255, 255);
+  --cg-darkgrey: rgb(25, 25, 25);
   --cg-blue: rgb(36, 94, 255);
-  --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
+  --cg-bggrey: rgb(95, 95, 95);
 }
 html {
   height: 100%;
 }
 
 body {
-  background: var(--cg-grey);
+  background: var(--cg-darkgrey);
   position: relative;
   min-height: 100vh;
   padding: 0;
   margin: 0;
   font-family: monospace;
 } /* CSS for navigation */
-
 .navbar {
   position: sticky;
   top: 0;
@@ -28,15 +28,17 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: var(--cg-black);
+  background-image: url("circuit-board.png");
+  background-size: fill;
   color: var(--cg-white);
-  padding: 0px 0px; /* Debug border */ /* border: solid red; */
+  padding: 0px 0px;
 }
 .nav-list {
   display: flex;
   flex-direction: row;
   position: relative;
   right: 30px;
+  background-color: black;
   list-style: none; /* Debug border */ /* border: solid blue; */
 }
 .navbar a {
@@ -56,12 +58,14 @@ body {
 }
 .logo a {
   font-family: Georgia;
+  background-color: black;
 }
 .logo a:hover {
   text-decoration: None;
 }
 main {
   padding: 0 20px 40px 20px;
+  color: var(--cg-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,21 +76,21 @@ main {
   justify-content: center;
   font-size: 40px;
   font-family: Georgia;
-} /* CSS for portfolio grid */
+}
 
+/* CSS for portfolio grid */
 .project {
+  color: black;
   display: flex;
   justify-content: center;
   flex-direction: row;
   max-width: 45%;
   margin: 1em 0 2em 0;
   border: 1px solid #ccc;
-  background-color: #ffffff;
+  background-color: var(--cg-bggrey);
   border-radius: 5px;
 }
-.item-link {
-  width: 70%;
-}
+
 .project-image {
   object-fit: contain;
   width: 100%;
@@ -96,7 +100,6 @@ main {
 }
 .project-details {
   display: flex;
-  background-color: var(--cg-white);
   width: 30%;
   height: 200px;
   flex-shrink: 1;
@@ -108,13 +111,13 @@ main {
   justify-content: center; /* Debug border */ /* border: 2px solid green; */
 }
 .project-details a {
-  color: var(--cg-black);
+  color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 1px;
 }
 .project-details a:hover {
-  color: var(--cg-blue);
+  color: blue;
   text-decoration: underline;
 }
 .project-details {
@@ -134,9 +137,9 @@ main {
   justify-content: space-between;
   padding: 20px;
   padding-bottom: 20px;
-  background-color: #f8f8f8;
+  background-color: var(--cg-bggrey);
   border: 1px solid #ccc;
-  border-radius: 5px; /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border-radius: 5px;
 }
 .about-image img {
   max-width: 300px;
@@ -145,6 +148,7 @@ main {
 .about-text {
   flex: 1;
   margin-left: 20px;
+  color: black;
 }
 .about-text h2 {
   font-size: 24px;
@@ -155,7 +159,7 @@ main {
   line-height: 1.5;
 } /* CSS for resume page */
 .button {
-  background-color: var(--cg-black);
+  background-color: var(--cp-text);
   border: none;
   color: var(--cg-white);
   font-family: monospace;
@@ -185,16 +189,13 @@ textarea {
   border-radius: 4px;
   font-size: 16px;
   resize: none;
-} /* Add some spacing to the form */
-form {
-  width: 500px;
-  margin: 0 auto;
-} /* CSS for footer */
+} 
+/* CSS for footer */
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cg-black);
+  background-color: var(--cp-text);
   color: var(--cg-white);
   position: absolute;
   bottom: 0;
